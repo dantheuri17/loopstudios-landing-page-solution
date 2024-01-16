@@ -28,20 +28,24 @@ import desktopFisheye from '../assets/images/desktop/image-fisheye.jpg';
 const Main = () => {
 	return (
 		<main className="max-w-[23.4375rem] mt-[6rem] md:mt-[10rem] md:max-w-none">
-			<div className="pl-[10.25rem] relative">
-				<picture>
+			<div className="md:pl-[10.25rem] md:relative grid grid-cols-1 justify-center">
+				<picture className="flex justify-center md:justify-normal">
 					<source media="(max-width: 480px)" srcSet={mobileInteractiveImage} />
 					<source
 						media="(min-width: 1024px)"
 						srcSet={desktopInteractiveImage}
 					/>
-					<img src="" alt="" className="md:h-[31.25rem]" />
+					<img
+						src=""
+						alt=""
+						className="md:h-[31.25rem] h-[14rem]"
+					/>
 				</picture>
-				<div className="absolute grid grid-cols-1 bg-white  gap-y-[1rem] md:gap-y-[1.56rem] md:top-[11.44rem] md:right-[10.31rem] mt-[5rem] md:mt-0 px-[3rem] md:pl-[6rem] md:pt-[6rem] md:w-[33.8125rem] md:h-[19.8125rem]">
+				<div className="md:absolute  bg-white  gap-y-[1rem]  md:top-[11.44rem] md:right-[10.31rem] mt-[5rem] md:mt-0 px-[3rem] md:pl-[6rem] md:pt-[6rem] md:w-[33.8125rem] md:h-[19.8125rem]">
 					<h1 className="uppercase font-josefinSans text-[2rem] md:text-[3rem] text-center md:text-left font-[300] leading-[2rem] md:leading-[3rem]">
 						The leader in interactive VR
 					</h1>
-					<p className="font-alata text-[0.9375rem] leading-[1.5625rem] md:w-[27.8125rem] font-[400] opacity-[0.5]">
+					<p className="font-alata text-[0.9375rem] leading-[1.5625rem] md:w-[27.8125rem] mt-[1rem] font-[400] opacity-[0.5] md:mt-[1.56rem]">
 						Founded in 2011, Loopstudios has been producing world-class virtual
 						reality projects for some of the best companies around the globe.
 						Our award-winning creations have transformed businesses through
